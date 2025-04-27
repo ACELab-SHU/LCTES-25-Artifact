@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="v_llc" type="CMakeRunConfiguration" factoryName="Application" folderName="venusrun" PROGRAM_PARAMS="-O3 -mattr=+m,+zvenus --venus-nr-row=2048 --venus-nr-lane=32 --venus-vrf-baseaddr=0x80100000 -debug-only=venus -verify-regalloc -regalloc=basic --enable-venus-alu-anlysis test.split.ll -o test.s" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$ProjectFileDir$/../venus_test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="llc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="llc">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

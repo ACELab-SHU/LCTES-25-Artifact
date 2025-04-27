@@ -1,0 +1,12 @@
+*
+!.gitignore
+!firmware.lds
+!firmware.s
+!Makefile
+!test.c
+!test.c.bak
+!venus.h
+!makehex.py
+!riscv_printf.h
+!gen_venustype_h.py
+!gen_venusbuiltin_h.py

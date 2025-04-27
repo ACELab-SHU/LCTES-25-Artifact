@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="v_opt" type="CMakeRunConfiguration" factoryName="Application" folderName="venusrun" PROGRAM_PARAMS="-mem2reg -S test.0.ll -o test.ll" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$ProjectFileDir$/../venus_test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="opt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="opt">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="v_clang" run_configuration_type="CMakeRunConfiguration" run_configuration_target="CMakeBuildProfile:Debug" />
+    </method>
+  </configuration>
+</component>

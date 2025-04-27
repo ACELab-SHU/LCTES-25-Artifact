@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="v_llvm-tblgen" type="CMakeRunConfiguration" factoryName="Application" folderName="venusrun" PROGRAM_PARAMS="-gen-global-isel -I $PROJECT_DIR$/lib/Target/RISCV -I/home/jianglimin/llvm-project-cmake-build-debug/include -I/home/jianglimin/llvm-project/llvm/include -I $PROJECT_DIR$/lib/Target $PROJECT_DIR$/lib/Target/RISCV/RISCV.td --write-if-changed -o lib/Target/RISCV/RISCVGenGlobalISel.inc -d lib/Target/RISCV/RISCVGenGlobalISel.inc.d" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="llvm-tblgen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="llvm-tblgen">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

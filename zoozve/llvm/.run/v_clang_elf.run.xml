@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="v_clang_elf" type="CMakeRunConfiguration" factoryName="Application" folderName="venusrun" PROGRAM_PARAMS="-v -c --target=riscv32-unknown-elf --gcc-toolchain=/server17/ic/riscv32im -march=rv32imzvenus -ffreestanding -o test test.s" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$ProjectFileDir$/../venus_test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="clang" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="clang">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="v_clang_elf_debug" type="CMakeRunConfiguration" factoryName="Application" folderName="venusrun" PROGRAM_PARAMS="&quot;-cc1as&quot; &quot;-triple&quot; &quot;riscv32-unknown-unknown-elf&quot; &quot;-filetype&quot; &quot;obj&quot; &quot;-main-file-name&quot; &quot;test.s&quot; &quot;-target-feature&quot; &quot;+m&quot; &quot;-target-feature&quot; &quot;+zvenus&quot; &quot;-target-feature&quot; &quot;+relax&quot; &quot;-target-feature&quot; &quot;-save-restore&quot; &quot;-fdebug-compilation-dir=$USER_HOME$/llvm-project-cmake-build-debug/bin&quot; &quot;-dwarf-debug-producer&quot; &quot;clang version 15.0.7 (http://10.0.0.3:6655/Langley/venus-llvm-project.git a523d1bffd213ff828f82761f6017e7dd32b70e3)&quot; &quot;-dwarf-version=5&quot; &quot;-mrelocation-model&quot; &quot;static&quot; &quot;-target-abi&quot; &quot;ilp32&quot; &quot;--mrelax-relocations&quot; &quot;-o&quot; &quot;/tmp/test-789775.o&quot; &quot;../../llvm-app/test.s&quot;" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="clang" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="clang">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

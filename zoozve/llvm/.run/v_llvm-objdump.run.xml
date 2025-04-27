@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="v_llvm-objdump" type="CMakeRunConfiguration" factoryName="Application" folderName="venusrun" activateToolWindowBeforeRun="false" PROGRAM_PARAMS=" -d --mattr=+m,+zvenus -M no-aliases test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$ProjectFileDir$/../venus_test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="llvm-objdump" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="llvm-objdump">
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="v_clang" run_configuration_type="CMakeRunConfiguration" run_configuration_target="CMakeBuildProfile:Debug" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="v_opt_preRA" run_configuration_type="CMakeRunConfiguration" run_configuration_target="CMakeBuildProfile:Debug" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="v_llc" run_configuration_type="CMakeRunConfiguration" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="v_clang_elf" run_configuration_type="CMakeRunConfiguration" run_configuration_target="CMakeBuildProfile:Debug" />
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,77 @@
+//==- BuiltinsRISCV.def - RISC-V Builtin function database -------*- C++ -*-==//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+//
+// This file defines the RISC-Venus-specific builtin function database. Users of
+// this file must define the BUILTIN macro to make use of this information.
+//
+//===----------------------------------------------------------------------===//
+
+#if defined(TARGET_BUILTIN) && !defined(VENUS_BUILTIN)
+#   define VENUS_BUILTIN(ID, TYPE, ATTRS, FEATURE, INTRINSIC, MASK_WRITE) TARGET_BUILTIN(ID, TYPE, ATTRS, FEATURE)
+#endif
+
+#define HAS_MASK_WRITE 1
+#define NO_MASK_WRITE  0
+
+//          builtin name,              extension, 1st intrinsic name, mask write
+VENUS_BUILTIN(__Venus_and, "v.", "nt", "zvenus", venus_and_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_or, "v.", "nt", "zvenus", venus_or_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_xor, "v.", "nt", "zvenus", venus_xor_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_brdcst, "v.", "nt", "zvenus", venus_brdcst_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sll, "v.", "nt", "zvenus", venus_sll_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_srl, "v.", "nt", "zvenus", venus_srl_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sra, "v.", "nt", "zvenus", venus_sra_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_seq, "v.", "nt", "zvenus", venus_seq_ivv, HAS_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sne, "v.", "nt", "zvenus", venus_sne_ivv, HAS_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sltu, "v.", "nt", "zvenus", venus_sltu_ivv, HAS_MASK_WRITE)
+VENUS_BUILTIN(__Venus_slt, "v.", "nt", "zvenus", venus_slt_ivv, HAS_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sleu, "v.", "nt", "zvenus", venus_sleu_ivv, HAS_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sle, "v.", "nt", "zvenus", venus_sle_ivv, HAS_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sgtu, "v.", "nt", "zvenus", venus_sgtu_ivv, HAS_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sgt, "v.", "nt", "zvenus", venus_sgt_ivv, HAS_MASK_WRITE)
+VENUS_BUILTIN(__Venus_mnot, "v." , "nt", "zvenus", venus_mnot_misc, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_add, "v.", "nt", "zvenus", venus_add_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sadd, "v.", "nt", "zvenus", venus_sadd_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_saddu, "v.", "nt", "zvenus", venus_saddu_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_rsub, "v.", "nt", "zvenus", venus_rsub_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_sub, "v.", "nt", "zvenus", venus_sub_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_ssub, "v.", "nt", "zvenus", venus_ssub_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_ssubu, "v.", "nt", "zvenus", venus_ssubu_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_mul, "v.", "nt", "zvenus", venus_mul_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_mulh, "v.", "nt", "zvenus", venus_mulh_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_mulhu, "v.", "nt", "zvenus", venus_mulhu_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_mulhsu, "v.", "nt", "zvenus", venus_mulhsu_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_muladd, "v.", "nt", "zvenus", venus_muladd_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_mulsub, "v.", "nt", "zvenus", venus_mulsub_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_addmul, "v.", "nt", "zvenus", venus_addmul_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_submul, "v.", "nt", "zvenus", venus_submul_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_cmxmul, "v.", "nt", "zvenus", venus_cmxmul_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_div, "v.", "nt", "zvenus", venus_div_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_rem, "v.", "nt", "zvenus", venus_rem_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_divu, "v.", "nt", "zvenus", venus_divu_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_remu, "v.", "nt", "zvenus", venus_remu_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_redand, "v.", "nt", "zvenus", venus_redand_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_redor, "v.", "nt", "zvenus", venus_redor_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_redxor, "v.", "nt", "zvenus", venus_redxor_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_redmax, "v.", "nt", "zvenus", venus_redmax_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_redmaxu, "v.", "nt", "zvenus", venus_redmaxu_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_redmin, "v.", "nt", "zvenus", venus_redmin_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_redminu, "v.", "nt", "zvenus", venus_redminu_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_redsum, "v.", "nt", "zvenus", venus_redsum_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_range, "v.", "nt", "zvenus", venus_range_misc, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_claim, "v.", "nt", "zvenus", venus_claim_misc, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_shuffle, "v.", "nt", "zvenus", venus_shuffle_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_pseudo, "v.", "nt", "zvenus", venus_pseudo_ivv, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_vaddr, "v.", "nt", "zvenus", venus_vaddr_misc, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_setcsr, "vii", "nt", "zvenus", venus_vaddr_misc, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_return, "v.", "nt", "zvenus", venus_vaddr_misc, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_barrier, "v", "nt", "zvenus", venus_vaddr_misc, NO_MASK_WRITE)
+VENUS_BUILTIN(__Venus_shuffle_test, "v.", "nt", "zvenus", venus_shuffle_test, NO_MASK_WRITE)
+
+
+#undef VENUS_BUILTIN
